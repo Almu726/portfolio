@@ -47,8 +47,8 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 2rem; /* Adds spacing between columns */
+    flex-wrap: wrap; 
+    gap: 2rem; 
     padding: 3rem calc((100vw - 1300px) / 2);
     height: 100%;
 }
