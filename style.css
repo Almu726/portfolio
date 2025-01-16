@@ -319,7 +319,7 @@ form button:hover {
     gap: 1rem;
 }
 
-.hero-image {
+.cert-img {
     width: 200px; 
     height: auto;
     object-fit: contain;
