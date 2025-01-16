@@ -190,7 +190,6 @@ form button:hover {
     color: white;
 }
 
-/* Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -294,6 +293,10 @@ form button:hover {
     background-color: #f44336; 
 }
 
+.certification-4 {
+    background-color: #9c27b0; 
+}
+
 
 .image-container {
     display: flex;
@@ -310,7 +313,6 @@ form button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Additional Styles */
 .hero-container {
     padding: 3rem calc((100vw - 1300px) / 2);
 }
