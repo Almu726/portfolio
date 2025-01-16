@@ -47,11 +47,20 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 2rem; /* Adds spacing between columns */
     padding: 3rem calc((100vw - 1300px) / 2);
     height: 100%;
 }
 
-
+.column-left {
+    flex: 1 1 300px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .column-left h1 {
     margin-bottom: 1rem;
@@ -62,6 +71,28 @@ nav a:hover {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
+}
+
+.column-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cert-image {
+    width: 200px; 
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -77,37 +108,6 @@ button {
 button:hover {
     background: white;
     color: black;
-}
-
-
-
-
-.cert-image {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    margin: 0.5rem;
-}
-
-.cert-image:nth-child(1) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(-50%);
-}
-
-.cert-image:nth-child(2) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cert-image:nth-child(3) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translateX(50%);
 }
 
 main {
@@ -168,7 +168,8 @@ form button:hover {
 
 @media screen and (max-width: 768px) {
     .hero-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: flex-start; /* Align content vertically */
     }
     
     .column-left h1 {
@@ -211,7 +212,6 @@ form button:hover {
     color: white; 
 }
 
-
 .experience-1 {
     background-color: gray;
 }
@@ -232,38 +232,6 @@ form button:hover {
     background-color: #9c27b0; 
 }
 
-
-
-.hero-container.certifications {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 3rem calc((100vw - 1300px) / 2);
-}
-
-
-.column-left {
-    flex: 1 1 300px;
-    min-width: 250px;
-}
-
-.column-right {
-    flex: 1 1 300px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-start;
-}
-
-
-.column-left p {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-
 .certification {
     padding: 1rem;
     margin: 1rem 0;
@@ -271,9 +239,8 @@ form button:hover {
     color: white;
 }
 
-
 .certification-1 {
-    background-color: #4caf50 ;
+    background-color: #4caf50;
 }
 
 .certification-2 {
@@ -286,34 +253,4 @@ form button:hover {
 
 .certification-4 {
     background-color: #9c27b0; 
-}
-
-
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.cert-image {
-    width: 200px; 
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero-container {
-    padding: 3rem calc((100vw - 1300px) / 2);
-}
-
-.column-left h1 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.column-left p {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
 }
