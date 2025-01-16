@@ -81,15 +81,6 @@ button:hover {
 
 
 
-.image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 600px; 
-    width: 280px;
-}
 
 .cert-image {
     width: 100%;
