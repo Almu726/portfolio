@@ -296,7 +296,7 @@ form button:hover {
 }
 
 .cert-image {
-    width: 50px; 
+    width: 200px; 
     height: auto;
     object-fit: contain;
     border-radius: 8px;
