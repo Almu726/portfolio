@@ -258,7 +258,7 @@ form button:hover {
 
 
 
-.hero-container{
+.hero-container.certifications {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -266,10 +266,20 @@ form button:hover {
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
-.column-left h1 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+
+.column-left {
+    flex: 1 1 300px;
+    min-width: 250px;
 }
+
+.column-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
 
 .column-left p {
     margin-bottom: 2rem;
@@ -310,14 +320,12 @@ form button:hover {
 }
 
 .hero-image {
-    width: 50px; 
-    height: 50px;
+    width: 200px; 
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-
 
 .hero-container {
     padding: 3rem calc((100vw - 1300px) / 2);
