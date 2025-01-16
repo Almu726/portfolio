@@ -257,7 +257,12 @@ form button:hover {
 }
 
 
-.hero-container {
+
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
@@ -299,19 +304,17 @@ form button:hover {
 
 
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 1rem; 
-    justify-content: start;
-    margin-top: 1rem; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .hero-image {
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; 
+    width: 200px; 
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
